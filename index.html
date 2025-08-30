@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Anuu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Image Gallery for Home -->
+    <div class="background-gallery" id="homeGallery">
+        <div class="bg-image active" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+        <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+        <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80')"></div>
+    </div>
+
+    <!-- Background Image Gallery for About Me -->
+    <div class="background-gallery" id="aboutGallery" style="display: none;">
+        <div class="bg-image active" style="background-image: url('Image/IMG_20240122_090039_552.jpg')"></div>
+        <div class="bg-image" style="background-image: url('Image/Screenshot_20240404-135627.png')"></div>
+        <div class="bg-image" style="background-image: url('Image/Screenshot_20240302-164900.png')"></div>
+        <div class="bg-image" style="background-image: url('Image/00100lPORTRAIT_00100_BURST20231101090412628_COVER.jpg')"></div>
+        <div class="bg-image" style="background-image: url('Image/PXL_20250512_073351362.PORTRAIT.jpg')"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>It's Anuu</h1>
+            </div>
+            
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+        
+        <div class="nav-menu" id="navMenu">
+            <div class="nav-item">
+                <i class="fas fa-home"></i>
+                <a href="#home">Home</a>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-user"></i>
+                <a href="#about">About Me</a>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <a href="#work">My Work</a>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-envelope"></i>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <h1 class="hero-title">Welcome to Anuwary Mwitike</h1>
+            <p>Official Website </p>
+            <p class="hero-subtitle">Font end  Developer  , Data Analyst  & Designer</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section" style="display: none;">
+            <div class="about-container">
+                <h2 class="about-title">Get to know me a little better</h2>
+                
+                <div class="about-content">
+                    <div class="about-item">
+                        <h3><i class="fas fa-user-circle"></i> Introduce myself</h3>
+                        <div class="about-image-container">
+                            <img src="Image/PXL_20250512_073351362.PORTRAIT.jpg" alt="Anuwary Mwitike" class="about-image">
+                            <p class="image-caption">Anuwary Mwitike - Data Science Student</p>
+                        </div>
+                        <p>My name is <strong>Anuwary Mwitike</strong>. I am currently studying for a Bachelor's degree in Data Science at the Eastern Africa Statistical Training Centre (EASTC).</p>
+                    </div>
+
+                    <div class="about-item">
+                        <h3><i class="fas fa-laptop-code"></i> Software Skills</h3>
+                        <p>I love Analysis and I use software such as Stata, R Studio, and Excel for analysis. I would like to learn Python for analysis, but I know Python a little. I also love graphics and I do some graphic work using Adobe Photoshop.</p>
+                        <div class="software-icons">
+                            <div class="software-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Excel">
+                                <span>Excel</span>
+                            </div>
+                            <div class="software-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png" alt="R Studio">
+                                <span>R Studio</span>
+                            </div>
+                            <div class="software-icon">
+                                <img src="https://www.stata.com/images/stata-logo.png" alt="Stata">
+                                <span>Stata</span>
+                            </div>
+                            <div class="software-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="Adobe Photoshop">
+                                <span>Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <h3><i class="fas fa-scissors"></i> Other Skills - Sewing</h3>
+                        <div class="about-image-container">
+                            <img src="Image/Screenshot_20240404-135627.png" alt="Sewing Work" class="about-image">
+                            <p class="image-caption">My Sewing Projects</p>
+                        </div>
+                        <p>I love sewing clothes because it's something I enjoy besides studying. So when I'm free, I usually sew. I was taught sewing by my grandfather, so I'm proud to have learned the skill of sewing from him.</p>
+                    </div>
+
+                    <div class="about-item">
+                        <h3><i class="fas fa-heart"></i> Personal Qualities</h3>
+                        <div class="about-image-container">
+                            <img src="Image/IMG_20240122_090039_552.jpg" alt="Anuwary with friend" class="about-image">
+                            <p class="image-caption">Anuwary Mwitike - Friendly and Social Person</p>
+                        </div>
+                        <p><strong>Anuwary Mwitike</strong> is a kind, generous, and funny person who loves to meet new people. I am someone who believes in learning and respect (I keep myself well and I am respectful).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Work Section -->
+        <section id="work" class="work-section" style="display: none;">
+            <div class="work-container">
+                <h2 class="work-title">My Work Portfolio</h2>
+                
+                <div class="work-content">
+                    <!-- EASTCSO Work -->
+                    <div class="work-item">
+                        <div class="work-header">
+                            <div class="work-icon">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\EASTCSO\EASTCSO LOGO.png" alt="EASTCSO">
+                            </div>
+                            <h3>EASTCSO Work</h3>
+                        </div>
+                        <div class="work-gallery">
+                            <div class="gallery-item">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\EASTCSO\EASTCSO Poster 1.png" alt="EASTCSO Poster 1">
+                                <p class="gallery-caption">EASTCSO Poster 1</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\EASTCSO\EASTCSO Poster 2.png" alt="EASTCSO Poster 2">
+                                <p class="gallery-caption">EASTCSO Poster 2</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\EASTCSO\EASTCSO Poster 3.png" alt="EASTCSO Poster 3">
+                                <p class="gallery-caption">EASTCSO Poster 3</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UVCCM Work -->
+                    <div class="work-item">
+                        <div class="work-header">
+                            <div class="work-icon">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\UVCCM\UVCCM LOGO.png" alt="UVCCM">
+                            </div>
+                            <h3>UVCCM Work</h3>
+                        </div>
+                        <div class="work-gallery">
+                            <div class="gallery-item">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\UVCCM\UVCCM Work 1.png" alt="UVCCM Work 1">
+                                <p class="gallery-caption">UVCCM Work 1</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\UVCCM\UVCCM Work 2.png" alt="UVCCM Work 2">
+                                <p class="gallery-caption">UVCCM Work 2</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\UVCCM\UVCCM Work 3.png" alt="UVCCM Work 3">
+                                <p class="gallery-caption">UVCCM Work 3</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Work -->
+                    <div class="work-item">
+                        <div class="work-header">
+                            <div class="work-icon">
+                                <i class="fas fa-palette" style="font-size: 2.5rem; color: #4ecdc4;"></i>
+                            </div>
+                            <h3>Other Work - Graphics</h3>
+                        </div>
+                        <div class="work-gallery">
+                            <div class="gallery-item">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\Other work\Graphics Work 1.png" alt="Graphics Work 1">
+                                <p class="gallery-caption">Graphics Work 1</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\Other work\Graphics Work 2.png" alt="Graphics Work 2">
+                                <p class="gallery-caption">Graphics Work 2</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="C:\Users\HP 840\Documents\Notes\Books\My Website\My Work\Other work\Graphics Work 3.png" alt="Graphics Work 3">
+                                <p class="gallery-caption">Graphics Work 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" style="display: none;">
+            <div class="contact-container">
+                <h2 class="contact-title">
+                    <i class="fas fa-phone"></i> Get In Touch
+                </h2>
+                
+                <div class="contact-content">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h3>Send me a message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell me anything you want to say..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="social-links-container">
+                        <h3>Connect with me</h3>
+                        <div class="social-links">
+                            <a href="https://wa.me/255626008501" target="_blank" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            
+                            <a href="https://instagram.com/It's Anuu" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            
+                            <a href="https://facebook.com/Anuwary Mwitike" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            
+                            <a href="https://linkedin.com/in/Anuwary Mwitike" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll to Top Arrow -->
+        <div class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>  
